@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Gayathri:400,700&display=swap" rel="stylesheet">
 
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <!-- styles -->
-    <link rel="stylesheet" href="public/css/animate.min.css">
     <link rel="stylesheet" href="public/css/normalize.css">
+    <link rel="stylesheet" href="public/css/animate.min.css">
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
@@ -24,29 +27,32 @@
 
 
 
-<header class="header border-out">
-    <div class="logo-container border-in">
+<header class="header-container border-out">
+
+    <div class="header border-in">
+
+        <nav class="nav">
+            <a href="#" class="nav__element animated bounceInLeft">
+                <div class="nav__element-text">Home</div>
+            </a>
+            <a href="#" class="nav__element animated bounceInLeft">
+                <div class="nav__element-text">Posts</div>
+            </a>
+            <a href="#" class="nav__element animated bounceInLeft">
+                <div class="nav__element-text">Categories</div>
+            </a>
+        </nav>
+
+        <i class="fas fa-bars nav-mobile-button"></i>
+    
         <a href="#" class="logo bounceInDown animated">Site name</a>
+
     </div>
+
 </header>
 
 <section class="ad-info">
 </section>
-
-<nav class="nav-container border-out">
-    <div class="nav border-in">
-        <a href="#" class="nav__element animated bounceInLeft">
-            <div class="nav__element-text">Home</div>
-        </a>
-        <a href="#" class="nav__element animated bounceInLeft">
-            <div class="nav__element-text">Posts</div>
-        </a>
-        <a href="#" class="nav__element animated bounceInLeft">
-            <div class="nav__element-text">Categories</div>
-        </a>
-    </div>
-</nav>
-
 
 
 <div class="content-plus-sidebar-wrapper">
@@ -158,6 +164,9 @@
 
 </div>
 <!-- wrapper end -->
+
+
+
 
 </body>
 </html>

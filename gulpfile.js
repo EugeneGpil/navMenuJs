@@ -11,7 +11,6 @@ const cssDest = 'public/css'
 
 
 
-
 gulp.task('css', () => {
     return gulp.src(sassSrc)
         .pipe(sass())
@@ -21,7 +20,6 @@ gulp.task('css', () => {
 gulp.task('watch', function (){
     gulp.watch(sassSrc, gulp.series('css'));
 });
-
 
 
 
