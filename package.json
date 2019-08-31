@@ -1,0 +1,19 @@
+{
+  "name": "htmlforwpdocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-image-resize": "^0.13.1",
+    "gulp-sass": "^4.0.2",
+    "normalize.css": "^8.0.1"
+  }
+}
