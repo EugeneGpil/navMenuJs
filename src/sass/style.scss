@@ -18,6 +18,7 @@ $borderOutRadius: $borderInRadius + $mainBorderWidth;
 
 a{
     text-decoration: none;
+    font-family: 'Gayathri', sans-serif;
 }
 
 .wrapper{
@@ -94,7 +95,6 @@ a{
 }
 
 .logo{
-    font-family: 'Gayathri', sans-serif;
     color: $fontColor;
     font-size: 50px;
     font-weight: bold;
@@ -122,7 +122,7 @@ a{
     &__element{
         color: $fontColor;
         display: block;
-        margin-left: 20px;
+        padding-left: 20px;
         padding-right: 20px;
         border-right-style: solid;
         border-color: $secondBorderColor;
@@ -131,16 +131,28 @@ a{
         animation-delay: 0.75s;
         z-index: 100;
         background-color: $background;
+        height: 100%;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     &__element-text{
         font-size: 20px;
-        font-family: 'Gayathri', sans-serif;
         padding-top: 5px;
+    }
+
+    &__element-with-submenu-container{
+        position: relative;
+    }
+
+    &__submenu-container{
+        position: absolute;
     }
 }
 
-.nav-mobile-button{
+.submenu-button{
     font-size: 25px;
     margin-left: 20px;
     color: $fontColor;
@@ -155,20 +167,26 @@ a{
 }
 
 .nav-mobile{
-    position: absolute;
-    top: 67px;
     left: 10px;
+}
+
+.submenu{
+    position: fixed;
+    top: 67px;
     background: $background;
     border-radius: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
 
     &__element{
         color: $fontColor;
         font-size: 30px;
-        font-family: 'Gayathri', sans-serif;
         padding-top: 3px;
-        display: block
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     &__triangle-container{
@@ -177,6 +195,7 @@ a{
         position: absolute;
         border-style: solid;
         top: -20px;
+        left: 10px;
     }
 
     &__triangle{
@@ -185,5 +204,27 @@ a{
         position: absolute;
         top: -4px;
         left: -7px;
+    }
+
+    &__element-submenu{
+        width: 100%;
+    }
+
+    &__element-submenu-element{
+        height: 25px;
+        display: block;
+        padding-top: 5px;
+    }
+
+    &__element-submenu-element-text{
+        padding-top: 3px;
+        font-size: 20px;
+        padding-left: 10px;
+        color: $secondBorderColor;
+    }
+
+    &__element-submenu-container{
+        overflow: hidden;
+        background-color: $mainBorderColor;
     }
 }

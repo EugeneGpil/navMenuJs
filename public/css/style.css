@@ -1,5 +1,6 @@
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: 'Gayathri', sans-serif; }
 
 .wrapper {
   overflow: hidden;
@@ -65,7 +66,6 @@ a {
       width: 100%; } }
 
 .logo {
-  font-family: 'Gayathri', sans-serif;
   color: white;
   font-size: 50px;
   font-weight: bold;
@@ -88,7 +88,7 @@ a {
   .nav__element {
     color: white;
     display: block;
-    margin-left: 20px;
+    padding-left: 20px;
     padding-right: 20px;
     border-right-style: solid;
     border-color: black;
@@ -96,46 +96,70 @@ a {
     align-items: center;
     animation-delay: 0.75s;
     z-index: 100;
-    background-color: #313535; }
+    background-color: #313535;
+    height: 100%; }
+    .nav__element:hover {
+      cursor: pointer; }
   .nav__element-text {
     font-size: 20px;
-    font-family: 'Gayathri', sans-serif;
     padding-top: 5px; }
+  .nav__element-with-submenu-container {
+    position: relative; }
+  .nav__submenu-container {
+    position: absolute; }
 
-.nav-mobile-button {
+.submenu-button {
   font-size: 25px;
   margin-left: 20px;
   color: white; }
   @media screen and (min-width: 525px) {
-    .nav-mobile-button {
+    .submenu-button {
       display: none; } }
   @media screen and (max-width: 241px) {
-    .nav-mobile-button {
+    .submenu-button {
       font-size: 15px; } }
 
 .nav-mobile {
-  position: absolute;
+  left: 10px; }
+
+.submenu {
+  position: fixed;
   top: 67px;
-  left: 10px;
   background: #313535;
-  border-radius: 8px;
-  padding-left: 10px;
-  padding-right: 10px; }
-  .nav-mobile__element {
+  border-radius: 8px; }
+  .submenu__element {
     color: white;
     font-size: 30px;
-    font-family: 'Gayathri', sans-serif;
     padding-top: 3px;
-    display: block; }
-  .nav-mobile__triangle-container {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .submenu__element:hover {
+      cursor: pointer; }
+  .submenu__triangle-container {
     border: 10px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     border-style: solid;
-    top: -20px; }
-  .nav-mobile__triangle {
+    top: -20px;
+    left: 10px; }
+  .submenu__triangle {
     border: 7px solid transparent;
     border-bottom: 7px solid #313535;
     position: absolute;
     top: -4px;
     left: -7px; }
+  .submenu__element-submenu {
+    width: 100%; }
+  .submenu__element-submenu-element {
+    height: 25px;
+    display: block;
+    padding-top: 5px; }
+  .submenu__element-submenu-element-text {
+    padding-top: 3px;
+    font-size: 20px;
+    padding-left: 10px;
+    color: black; }
+  .submenu__element-submenu-container {
+    overflow: hidden;
+    background-color: #5f6867; }

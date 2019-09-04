@@ -35,15 +35,46 @@
             <a href="#" class="nav__element animated bounceInLeft">
                 <div class="nav__element-text">Home</div>
             </a>
-            <a href="#" class="nav__element animated bounceInLeft">
-                <div class="nav__element-text">Posts</div>
-            </a>
+
+
+
+            <div class="nav__element-with-submenu-container">
+
+                <a href="#" class="nav__element animated bounceInLeft" id="second-menu-element">
+                    <div class="nav__element-text">Posts</div>
+                </a>
+
+                <div class="nav__submenu-container">
+
+                    <div class="submenu border-in animated bounceOutLeft hidden" id="submenu">
+                        <a href="#" class="submenu__element">
+                            <div class="submenu__element-text">Popular</div>
+                        </a>
+                        <a href="#" class="submenu__element">
+                            <div class="submenu__element-text">Last</div>
+                        </a>
+                        <a href="#" class="submenu__element">
+                            <div class="submenu__element-text">Recommended</div>
+                        </a>
+                    
+                        <div class="submenu__triangle-container">
+                            <div class="submenu__triangle"></div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            
+
             <a href="#" class="nav__element animated bounceInLeft">
                 <div class="nav__element-text">Categories</div>
             </a>
         </nav>
 
-        <i class="fas fa-bars nav-mobile-button" id="mobile-nav-button"></i>
+        <i class="fas fa-bars submenu-button" id="mobile-nav-button"></i>
     
         <a href="#" class="logo bounceInDown animated">Site name</a>
 
@@ -53,19 +84,45 @@
 
 
 
-<nav class="nav-mobile border-in hidden bounceOutLeft animated" id="nav-mobile">
-    <a href="#" class="nav-mobile__element">
-        <div class="nav-mobile__element-text">Home</div>
-    </a>
-    <a href="#" class="nav-mobile__element">
-        <div class="nav-mobile__element-text">Posts</div>
-    </a>
-    <a href="#" class="nav-mobile__element">
-        <div class="nav-mobile__element-text">Categories</div>
+<nav class="nav-mobile submenu border-in hidden  bounceOutLeft animated" id="nav-mobile">
+    <a href="#" class="submenu__element">
+        <div class="submenu__element-text">Home</div>
     </a>
 
-    <div class="nav-mobile__triangle-container">
-        <div class="nav-mobile__triangle"></div>
+    <div class="submenu__element-with-submenu-container">
+
+        <a href="#" class="submenu__element" id="nav-mobile__element-with-submenu">
+            <div class="submenu__element-text">Posts</div>
+        </a>
+
+        <div class="submenu__element-submenu-container hidden" id="nav-mobile__element-submenu-container">
+
+            <div class="submenu__element-submenu bounceInDown animated">
+
+                <a href="#" class="submenu__element-submenu-element">
+                    <div class="submenu__element-submenu-element-text">Popular</div>
+                </a>
+
+                <a href="#" class="submenu__element-submenu-element">
+                    <div class="submenu__element-submenu-element-text">Last</div>
+                </a>
+
+                <a href="#" class="submenu__element-submenu-element">
+                    <div class="submenu__element-submenu-element-text">Recommended</div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="#" class="submenu__element">
+        <div class="submenu__element-text">Categories</div>
+    </a>
+
+    <div class="submenu__triangle-container">
+        <div class="submenu__triangle"></div>
     </div>
 </nav>
 
